@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/logo1.png" type="image/png">
+    <link rel="stylesheet" href="p8medegdel.css">
+    <title>Ээжүүд | Танд болон таны хүүхдэд</title>
+    <script>
+    window.onload = function() {
+    let isLoggedIn = localStorage.getItem("loggedIn");
+    if (isLoggedIn !== "true") {
+        window.location.href = "login.html";}
+    };
+    </script>
+</head>
+<body>
+    <div class="main">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html"><img class="logoEejuud" src="image/logo2.png" alt=""></a>
+        </div>
+        <div style="position: absolute; left: 1150px; width: 100px; height: 40px;  border: 1px solid rgb(255, 237, 237); top:30px; padding: 10px; border-radius: 30px;" >
+            <img style="position: absolute; width: 40px; top: 10px;" src="image/user.png" alt="">
+            <p style="position: absolute; top: 5px;left: 50px;">Nasaa</p>
+        </div>
+        <!-- Зүүн талын меню -->
+        <div class="menuCalendarBox">
+            <a href="index.html">
+                <span class="menuCalendarText">Өнөөдөр</span>
+            </a>
+        </div>
+
+        <div class="menuHutuchBox">
+            <a href="j1hutuch.html">
+                <span class="menuHutuchText">Хөтөч</span>
+            </a>
+        </div>
+
+        <div class="menuZuvluguuBox">
+            <a href="j2zuvluguu.html">
+                <span class="menuZuvluguuText">Зөвлөгөө</span>
+            </a>
+        </div>
+
+        <div class="menuForumBox">
+            <a href="j3forum.html">
+                <span class="menuForumText">Форум</span>
+            </a>
+        </div>
+
+        <div class="menuProfileBox">
+            <a href="j4profile.html">
+                <span class="menuProfileText">Профайл</span>
+            </a>
+        </div>
+
+        <!-- Хэвтээ меню -->
+        <div class="hevteeMenuBox">
+            <ul class="navbar">
+                <li><a href="j5bidniiTuhai.html">Бидний тухай</a></li>
+                <li><a href="j6une.html">Үнэ</a></li>
+                <li><a href="j7holbooBarih.html">Холбоо барих</a></li>
+                <li><a href="j8medegdel.html">Мэдэгдэл</a></li>
+            </ul>
+        </div>
+        <!-- Жирэмсний мэдээлэл -->
+        <!-- <div class="card1">
+            <p style="font-size: 20px; color: rgb(98, 98, 98);"><b>6 сар 12 өдөр</b></p>
+            <p style="font-size: small;color: rgb(98, 98, 98);">Анар шиг хэмжээтэй байна</p>
+            <br><br><br><br><br>
+            
+            <p style="font-size: 15px;color: rgb(98, 98, 98);"><img style="position: relative; width: 20px; height: 20px; top: 5px; " src="image/jin.png" alt="жингийн зураг"> &nbsp;Жин: <span><b>660гр</b></span></p>
+            <p style="font-size: 15px;color: rgb(98, 98, 98);"><img style="position: relative; width: 20px; height: 20px; top: 5px; " src="image/height.png" alt="өндрийн зураг"> &nbsp;Өндөр: <span><b>33.7см</b></span></p>
+
+            <img style="position: relative; left: 250px; top: -200px; width: 300px;" src="image/child3.gif" alt="хүүхдийн зураг">
+        </div>
+        Триместер
+        <div class="card2">
+            <p style="font-size: 15px;">3-р триместр</p>
+            <img style="width: 270px;" src="image/shugam.jpg" alt="">
+            <p style="font-size: 13px; width: 100px; float: left;">81 хоног үлдсэн</p>
+            <p style="font-size: 13px; text-align: end;">Төрөх огноо: 2026-01-07</p>
+        </div>
+        Хяналт
+        <div class="card3">
+            <p style="font-size: 15px;">Жирэмсний хяналт</p>
+            <img  src="" alt="">
+            <p style="font-size: 13px; width: 120px; float: left;">Дараагийн товлол:</p> <br>
+            <p style="position: absolute; top: 57px; left: 150px; font-size: 13px; text-align: end;">32 долоо хоногт</p>
+            <p style="position: absolute; font-size: 13px; width: 110px; float: left;">Нийт шинжилгээ:</p>
+            <p style="font-size: 13px; text-align: center;">4</p>
+        </div>
+        Зөвлөгөө -->
+        <div style="position: absolute; width: 200px; top: 120px; left: 970px;"><p>Өнөөдрийн зөвлөгөө</p></div>
+
+        <div class="zuvluguu1">
+            <div style="position: absolute; top: 25px; width: 100px; height: 100px; float: left; background-image: url(image/zuv1.jpg); background-size: 90px 90px; background-repeat: no-repeat;" class="zuvluguuzurag1">
+            </div>
+            <div style="position: absolute; left: 130px; width: 250px; height: 100px; ">
+                <p style="width: 150px; color: rgb(136, 133, 133); background-color: pink; border-radius: 5px; padding: 5px 5px">Болгоомжлох зүйлс</p>
+                <a href="j9zuv1.html" style="text-decoration: none; color: black;">Жирэмсний бүс буюу сойлт ямар үед зүүх вэ?</a>
+            </div>
+        </div>
+
+        <div class="zuvluguu2">
+            <div style="position: absolute; top: 25px; width: 100px; height: 100px; float: left; background-image: url(image/zuv2.jpg); background-size: 90px 90px; background-repeat: no-repeat;" class="zuvluguuzurag1">
+            </div>
+            <div style="position: absolute; left: 130px; width: 250px; height: 100px; ">
+                <p style="width: 150px; color: rgb(136, 133, 133); background-color: pink; border-radius: 5px; padding: 5px 5px">Болгоомжлох зүйлс</p>
+                <a href="j10zuv2.html" style="text-decoration: none; color: black;">Жирэмсэн үед айраг, ингэний хоормог ууж болох уу?</a>
+            </div>
+        </div>
+
+        <div class="zuvluguu3">
+            <div style="position: absolute; top: 25px; width: 100px; height: 100px; float: left; background-image: url(image/zuv3.jpg); background-size: 90px 90px; background-repeat: no-repeat;" class="zuvluguuzurag1">
+            </div>
+            <div style="position: absolute; left: 130px; width: 250px; height: 100px; ">
+                <p style="width: 150px; color: rgb(136, 133, 133); background-color: pink; border-radius: 5px; padding: 5px 5px">Болгоомжлох зүйлс</p>
+                <a href="j11zuv3.html" style="text-decoration: none; color: black;">Жирэмсний болон амаржсаны тэтгэмж /ДЕКРИТ/-ийг авахад тави...</a>
+            </div>
+        </div>
+
+        <!-- <div style="position: relative; width: 800px; top: -330px; left: 490px; font-size: 20px;">
+            <p>Хөнгөлөлттэй байгууллагууд</p>
+            <img style="position: absolute; width: 260px; float: left; left: -450px; top: 67px;" src="image/bhola.jpg" alt="">
+            <img style="position: absolute; width: 240px; float: left; left: -140px; top: 68px;" src="image/amrita.jpg" alt="">
+            <img style="position: absolute; width: 240px; float: left; left: 180px; top: 66px;" src="image/tsooMed.jpg" alt="">
+            <img style="position: absolute; width: 220px; float: left; left: 480px; top: 65px;" src="image/gbMed.jpg" alt="">
+        </div> -->
+        <div style="position: relative; background-color: rgb(254, 244, 247); width: 640px; height: 850px; left: 300px; top: -500px; border-radius: 15px;">
+            <h2 style="font-size: 20px; padding: 20px">Мэдэгдэл</h2>
+            <div>
+                <div style="position: absolute; width: 600px; height: 1px;  background-color: rgb(177, 176, 176); left: 20px;top: 52px;"></div>
+                <div>
+                    <img style="position: absolute; left: 20px; width: 30px; height: 30px; padding: 10px; background-color: rgb(244, 217, 222); border-radius: 10px; top: 90px;" src="image/bell.png" alt="">
+                </div>
+                    
+                <div style="position: absolute; left: 90px; top: 45px; line-height: 1.2em;">
+                    <p><b>26 Долоо хоног</b></p>
+                    <p>Та жирэмсний 26 долоо хоногтой боллоо. Таны төрөх сүүлийн хугацаа 2026 оны 1 сарын 23. Та жирэмсний нандин үеүдээ...</p>
+                    <p style="font-size: 12px; color: rgb(153, 153, 153);">2025-10-17 10:52</p>
+
+                </div>
+
+            </div>
+
+            <div style="position: relative; top: 50px;">
+                <div style="position: absolute; width: 600px; height: 1px;  background-color: rgb(177, 176, 176); left: 20px;top: 52px;"></div>
+                <div>
+                    <img style="position: absolute; left: 20px; width: 30px; height: 30px; padding: 10px; background-color: rgb(244, 217, 222); border-radius: 10px; top: 90px;" src="image/bell.png" alt="">
+                </div>
+                    
+                <div style="position: absolute; left: 90px; top: 45px; line-height: 1.2em;">
+                    <p><b>Хөнгөлөлттэй байгууллагууд</b></p>
+                    <p>Ээжүүд маань Цоо-мед, GBmed, Амрита эмэгтэйчүүдийн эмнэлэг-ээр үйлчлүүлэхдээ 10% хөнгөлөлт эдлэх...</p>
+                    <p style="font-size: 12px; color: rgb(153, 153, 153);">2025-10-13 12:41</p>
+
+                </div>
+
+            </div>
+            <div style="position: relative; top: 180px;">
+                <div style="position: absolute; width: 600px; height: 1px;  background-color: rgb(177, 176, 176); left: 20px;top: 52px;"></div>
+                <div>
+                    <img style="position: absolute; left: 20px; width: 30px; height: 30px; padding: 10px; background-color: rgb(244, 217, 222); border-radius: 10px; top: 90px;" src="image/bell.png" alt="">
+                </div>
+                <div style="position: absolute; left: 90px; top: 45px; line-height: 1.2em;">
+                    <p><b>Хүүхдийн толгойд даахь бий боллоо гэж үү?</b></p>
+                    <p>Жирэмсний 16 долоо хоногтойд ургийн арьсан доорх өөхөн эдийн хөгжил эхэлснээр толгойн үс ургах нөхцөл бий...</p>
+                    <p style="font-size: 12px; color: rgb(153, 153, 153);">2025-10-13 10:18</p>
+                </div>
+            </div>
+            <div style="position: relative; top: 310px;">
+                <div style="position: absolute; width: 600px; height: 1px;  background-color: rgb(177, 176, 176); left: 20px;top: 52px;"></div>
+                <div>
+                    <img style="position: absolute; left: 20px; width: 30px; height: 30px; padding: 10px; background-color: rgb(244, 217, 222); border-radius: 10px; top: 90px;" src="image/bell.png" alt="">
+                </div>
+                <div style="position: absolute; left: 90px; top: 45px; line-height: 1.2em;">
+                    <p><b>16 Долоо хоног</b></p>
+                    <p>Та жирэмсний 16 долоо хоногтой боллоо. Таны төрөх сүүлийн хугацаа 2026 оны 3 сарын 28. Та жирэмсний нандин үеүдээ...</p>
+                    <p style="font-size: 12px; color: rgb(153, 153, 153);">2025-10-11 09:08</p>
+                </div>
+            </div>
+            <div style="position: relative; top: 440px;">
+                <div style="position: absolute; width: 600px; height: 1px;  background-color: rgb(177, 176, 176); left: 20px;top: 52px;"></div>
+                <div>
+                    <img style="position: absolute; left: 20px; width: 30px; height: 30px; padding: 10px; background-color: rgb(244, 217, 222); border-radius: 10px; top: 90px;" src="image/bell.png" alt="">
+                </div>
+                <div style="position: absolute; left: 90px; top: 45px; line-height: 1.2em;">
+                    <p><b>Та хүүхдийнхээ хүйсийг мэдсэн үү?</b></p>
+                    <p>Хэт авиан шинжилгээгээр (ЭХО) хүүхдийнхээ хүйсийг мэдэх боломжтой болсон байна<div class=""></div></p>
+                    <p style="font-size: 12px; color: rgb(153, 153, 153);">2025-10-11 09:08</p>
+                </div>
+            </div>
+            <div style="position: relative; top: 570px;">
+                <div style="position: absolute; width: 600px; height: 1px;  background-color: rgb(177, 176, 176); left: 20px;top: 52px;"></div>
+                <div>
+                    <img style="position: absolute; left: 20px; width: 30px; height: 30px; padding: 10px; background-color: rgb(244, 217, 222); border-radius: 10px; top: 90px;" src="image/bell.png" alt="">
+                </div>
+                <div style="position: absolute; left: 90px; top: 45px; line-height: 1.2em;">
+                    <p><b>Дурсамжаа татаад ав</b></p>
+                    <p>Та өөрийн үүсгэсэн дурсамжаа бичлэг эсвэл PDF хэлбэрээр татаж аваарай! Апп-аа шинэчилж, хамгийн сүүлийн...</p>
+                    <p style="font-size: 12px; color: rgb(153, 153, 153);">2025-10-10 07:59</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

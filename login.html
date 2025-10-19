@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/logo1.png" type="image/png">
+    <link rel="stylesheet" href="login.css">
+    <title>Ээжүүд | Танд болон таны хүүхдэд</title>
+    <style>
+        input::placeholder{
+            color: rgb(208, 208, 208);
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="main">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html"><img class="logoEejuud" src="image/logo2.png" alt=""></a>
+        </div>
+
+        <div style="position: absolute; background-color: rgb(248, 201, 201); width: 920px; height: 390px; top: 170px; left: 50px; padding: 10px; border-radius: 15px;">
+            <img style="position: absolute; width:300px; border-radius: 15px;" src="image/eej1.jpg" alt="">
+            <img style="position: absolute; width:300px; border-radius: 15px; left: 320px;" src="image/eej2.jpg" alt="">
+            <img style="position: absolute; width:300px; border-radius: 15px;left: 630px;" src="image/eej3.jpg" alt="">
+        </div>
+
+        <div style="position: absolute; left: 1070px;top: 250px">
+            <form action="">
+                <div style="position: absolute; width: 200px; height: 30px;padding: 10px; border-radius: 10px;border-color: rgb(255, 132, 132); border-style: solid;">
+                    <img style="position: absolute; width: 20px; top: 15px; left: 10px;" src="image/telephone.png" alt="">
+                    <input style="position: absolute; left: 50px; top: 17px; border: none;" type="tel" name="" id="name" placeholder="Утасны дугаар">
+                </div>
+                <div style="position: absolute; width: 200px; height: 30px;padding: 10px; border-radius: 10px; top: 60px;border-color: rgb(255, 132, 132); border-style: solid; ">
+                    <img style="position: absolute; width: 20px; top: 15px; left: 10px;" " src="image/password.png" alt="">
+                    <input style="position: absolute; left: 50px; top: 17px; border: none; color: rgb(197, 197, 197); " type="password" name="" id="pass" placeholder="Нууц үг">
+                </div>
+            </form>
+            <a style="position: absolute; left: 110px; top: 120px; font-size: 15px; width: 200px; color: rgb(188, 188, 188); text-decoration: none; " href="#">Нууц үг сэргээх</a>
+
+            <button onclick="login()" style="position: absolute; width: 220px; height: 30px; top: 180px; background-color: rgb(255, 132, 132); border: none; border-radius: 10px; color: white; cursor: pointer;" id="nevtreh">Нэвтрэх</button>
+            <p style="position: absolute;left: 10px; top: 130px; width: 200px; color: red; font-size: 12px; text-align: center;" id="error""></p>
+            <p style="position: absolute;left: 10px; top: 210px; width: 200px; color: rgb(166, 166, 166); font-size: 12px; text-align: left;;" ">Нэвтрэх нэр: 85000000 <br> Нууц үг: 1111</p>
+
+        </div>
+
+    
+    
+    </div>
+    <script>
+        function login(){
+            let username=document.getElementById("name").value;
+            let password=document.getElementById("pass").value;
+            let error=document.getElementById("error");
+
+            let nevtrehNer="85000000";
+            let nuutsUg="1111";
+
+            if(username==="" || password===""){
+                error.textContent="Нэвтрэх нэр нууц үгээ оруулна уу!";
+                return;
+            }
+
+            if(username===nevtrehNer && password===nuutsUg){
+                localStorage.setItem("loggedIn", "true");
+                window.location.href="index.html";
+            } else {
+                error.textContent="Нэвтрэх нэр эсвэл нууц үг буруу байна";
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    width: 1400px;
+    height: 900px;
+    border: 1px;;
+    border-color: rgb(255, 132, 132);
+    border-style: solid;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    position: relative;
+}
+.logoEejuud{
+    position: absolute;
+    left: 80px;
+    top: 40px;
+    width: 200px;
+}
+/* Зүүн меню 1 */
+.hevteeMenuBox{
+    position: relative;
+    top: -110px;
+    left: 450px;
+    max-width: 600px;
+}
+.navbar{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 5px;
+    overflow: auto;
+}
+.navbar li{
+    float: left;
+}
+.navbar li a{
+    display: block;
+    color: rgb(98, 98, 98);
+    text-decoration: none;
+    padding: 15px;
+    font-size: 20px;
+}
+.navbar li a:hover{
+    color:rgba(253, 119, 118) ;
+}
+/* Карт 1 */
+.card1{
+    width:600px;
+    height: 280px;
+    border: 1px;
+    border-radius: 15px;
+    padding: 10px 25px;
+    background-color: rgb(251, 246, 239);
+    position: relative;
+    left: 300px;
+    top: -60px;
+}
+/* Карт 2 */
+.card2{
+    width:270px;
+    height: 120px;
+    border: 1px;
+    border-radius: 15px;
+    padding: 10px 25px;
+    background-color: rgb(251, 246, 239);
+    position: relative;
+    left: 300px;
+    top: -55px;
+    float: left;
+}
+/* Карт 3 */
+.card3{
+    width:270px;
+    height: 120px;
+    border: 1px;
+    border-radius: 15px;
+    padding: 10px 25px;
+    background-color: rgb(251, 246, 239);
+    position: relative;
+    left: 310px;
+    top: -55px;
+    float: left;
+}
+/* Зөвлөгөө */
+.zuvluguu1{
+    width:380px;
+    height: 120px;
+    border: 1px;
+    border-radius: 15px;
+    padding: 10px 25px;
+    background-color: rgb(251, 246, 239);
+    position: relative;
+    left: 960px;
+    top: -30px;
+}
+.zuvluguu2{
+    width:380px;
+    height: 120px;
+    border: 1px;
+    border-radius: 15px;
+    padding: 10px 25px;
+    background-color: rgb(251, 246, 239);
+    position: relative;
+    left: 960px;
+    top: -20px;
+}
+.zuvluguu3{
+    width:380px;
+    height: 120px;
+    border: 1px;
+    border-radius: 15px;
+    padding: 10px 25px;
+    background-color: rgb(251, 246, 239);
+    position: relative;
+    left: 960px;
+    top: -10px;
+}
+
+/* Зүүн меню 1 */
+.menuCalendarBox a {
+    position: relative;
+    left: 80px;
+    top: 150px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    background-image: url(image/cal.png);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: left center;
+    padding-left: 40px;
+    color: rgb(98, 98, 98);
+    font-size: 25px;
+    transition: all 0.3s;
+}
+
+.menuCalendarBox a:hover {
+    background-image: url(image/cal1.png);
+    color: rgba(253, 119, 118);
+}
+/* Зүүн меню 2 */
+.menuHutuchBox a {
+    position: relative;
+    left: 80px;
+    top: 180px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    background-image: url(image/hutuchS.png);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: left center;
+    padding-left: 40px;
+    color: rgb(98, 98, 98);/* rgba(192, 201, 207) */
+    font-size: 25px;
+    transition: all 0.3s;
+}
+
+.menuHutuchBox a:hover {
+    background-image: url(image/hutuchU.png);
+    color: rgba(253, 119, 118);
+}
+/* Зүүн меню 3 */
+.menuZuvluguuBox a {
+    position: relative;
+    left: 80px;
+    top: 210px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    background-image: url(image/zuvluguuS.png);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: left center;
+    padding-left: 40px;
+    color: rgb(98, 98, 98);
+    font-size: 25px;
+    transition: all 0.3s;
+}
+
+.menuZuvluguuBox a:hover {
+    background-image: url(image/zuvluguuU.png);
+    color: rgba(253, 119, 118);
+}
+/* Зүүн меню 4 */
+.menuForumBox a {
+    position: relative;
+    left: 80px;
+    top: 240px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    background-image: url(image/forumS.png);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: left center;
+    padding-left: 40px;
+    color: rgb(98, 98, 98);
+    font-size: 25px;
+    transition: all 0.3s;
+}
+
+.menuForumBox a:hover {
+    background-image: url(image/forumU.png);
+    color: rgba(253, 119, 118);
+}
+/* Зүүн меню 5 */
+.menuProfileBox a {
+    position: relative;
+    left: 80px;
+    top: 270px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    background-image: url(image/profileS.png);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: left center;
+    padding-left: 40px;
+    color: rgb(98, 98, 98);
+    font-size: 25px;
+    transition: all 0.3s;
+}
+
+.menuProfileBox a:hover {
+    background-image: url(image/profileU.png);
+    color: rgba(253, 119, 118);
+}
