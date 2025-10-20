@@ -12,14 +12,21 @@
     if (isLoggedIn !== "true") {
         window.location.href = "login.html";}
     };
+    
     </script>
 </head>
 <body>
+    
     <div class="main">
         <!-- Logo -->
         <div class="logo">
             <a href="index.html"><img class="logoEejuud" src="image/logo2.png" alt=""></a>
         </div>
+
+        <p style="position: absolute; left: 1250px; top: -10px; color: rgb(167, 167, 167);" id="datetime"></p>
+        
+
+        
 
         <div style="position: absolute; left: 1150px; width: 100px; height: 40px;  border: 1px solid rgb(255, 237, 237); top:30px; padding: 10px; border-radius: 30px;" >
             <img style="position: absolute; width: 40px; top: 10px;" src="image/user.png" alt="">
@@ -133,5 +140,23 @@
 
     
     </div>
+    <script>
+    function updateDateTime() {
+        const now = new Date();
+        const year=now.getFullYear();
+        const month=String(now.getMonth()+1).padStart(2, "0");
+        const day=String(now.getDate()).padStart(2,"0");
+        const hour=String(now.getHours()).padStart(2,"");
+        const minute=String(now.getMinutes()).padStart(2,"0");
+        
+        const formatted= `${year}-${month}-${day} ${hour}:${minute}`;
+        const el= document.getElementById("datetime");
+        if (el) el.textContent= formatted;
+    }
+
+    updateDateTime();
+    setInterval(updateDateTime, 60000);
+
+    </script>
 </body>
 </html>
